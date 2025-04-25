@@ -6,7 +6,7 @@
 /*   By: wisedeau <wisedeau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 19:00:19 by wisedeau          #+#    #+#             */
-/*   Updated: 2025/04/25 20:08:27 by wisedeau         ###   ########.fr       */
+/*   Updated: 2025/04/25 20:40:39 by wisedeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	char		*d;
 	const char	*s;
 
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	i = 0;
 	d = dest;
 	s = src;

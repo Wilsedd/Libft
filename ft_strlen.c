@@ -6,7 +6,7 @@
 /*   By: wisedeau <wisedeau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 16:55:37 by wisedeau          #+#    #+#             */
-/*   Updated: 2025/04/25 18:50:23 by wisedeau         ###   ########.fr       */
+/*   Updated: 2025/04/25 20:34:17 by wisedeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
+	i = 0;
 	while (s[i])
 		i++;
 	return (i);
