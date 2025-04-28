@@ -6,11 +6,11 @@
 #    By: wisedeau <wisedeau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/22 19:53:53 by wisedeau          #+#    #+#              #
-#    Updated: 2025/04/25 20:30:33 by wisedeau         ###   ########.fr        #
+#    Updated: 2025/04/28 19:40:08 by wisedeau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# NAME = libft.a
+# NAME = libft
 
 # HEADER = libft.h
 
@@ -22,11 +22,13 @@
 # 		ft_strlen.c \
 # 		ft_memset.c \
 # 		ft_bzero.c \
-# 		ft_memcpy.c
+# 		ft_memcpy.c \
+# 		ft_memmove.c \
+#		ft_strlcpy.c \
 		
 # OBJS            = $(SRCS:.c=.o)
 
-# #MANPATH = $(addprefix , $(SRCS))
+# MANPATH = $(addprefix , $(SRCS))
 
 # CC                = cc
 # RM                = rm -f
@@ -48,7 +50,8 @@
 # .PHONY:            all clean fclean re 
 
 
-NAME = libft.a
+#Makefile Francinette et a rendre je pense :
+NAME = libft.a 
 
 HEADER = libft.h
 
@@ -60,19 +63,24 @@ SRCS =	ft_isalpha.c \
 		ft_strlen.c \
 		ft_memset.c \
 		ft_bzero.c \
-		ft_memcpy.c
+		ft_memcpy.c \
+		ft_memmove.c \
+		ft_strlcpy.c \
 
 OBJS = $(SRCS:.c=.o)
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-AR = ar rcs
+AR = ar rcs #creer la bibliotheque statique
 RM = rm -f
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(AR) $(NAME) $(OBJS)
+		$(AR) $(NAME) $(OBJS)
+
+%.o: %.c $(HEADER)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJS)
@@ -83,3 +91,8 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
+
+# Si on modifies libft.h, le Makefile saura que tous les .o doivent être recompilés même si les .c n'ont pas changé !
+# Sinon, make ne recompilera pas et le programme risquera d'utiliser une vieille version des .o.
+# La règle %.o: %.c $(HEADER) dit : Pour chaque .c, compile en .o en appliquant $(CFLAGS) (donc -Wall -Wextra -Werror) !
+# Ensuite, $(AR) regroupe les .o dans libft.a.
