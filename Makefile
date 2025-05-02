@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: wisedeau <wisedeau@student.42.fr>          +#+  +:+       +#+         #
+#    By: wilsed <wilsed@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/22 19:53:53 by wisedeau          #+#    #+#              #
-#    Updated: 2025/04/28 19:40:08 by wisedeau         ###   ########.fr        #
+#    Updated: 2025/05/02 03:44:19 by wilsed           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@
 
 # SRCS =	ft_isalpha.c \
 # 		ft_isdigit.c \
-#         ft_isalnum.c \
+#     	ft_isalnum.c \
 # 		ft_isascii.c \
 # 		ft_isprint.c \
 # 		ft_strlen.c \
@@ -24,7 +24,13 @@
 # 		ft_bzero.c \
 # 		ft_memcpy.c \
 # 		ft_memmove.c \
-#		ft_strlcpy.c \
+# 		ft_strlcpy.c \
+# 		ft_strlcat.c \
+# 		ft_toupper.c \
+# 		ft_tolower.c \
+# 		ft_strchr.c \
+# 		ft_strrchr.c \
+#		ft_strncmp.c \
 		
 # OBJS            = $(SRCS:.c=.o)
 
@@ -66,6 +72,12 @@ SRCS =	ft_isalpha.c \
 		ft_memcpy.c \
 		ft_memmove.c \
 		ft_strlcpy.c \
+		ft_strlcat.c \
+		ft_toupper.c \
+		ft_tolower.c \
+		ft_strchr.c \
+		ft_strrchr.c \
+		ft_strncmp.c \
 
 OBJS = $(SRCS:.c=.o)
 
