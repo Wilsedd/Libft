@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wisedeau <wisedeau@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/03 17:37:34 by wisedeau          #+#    #+#             */
+/*   Updated: 2025/05/03 17:37:38 by wisedeau         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
@@ -29,14 +41,15 @@ int	main(void)
 	char	src[] = "56789";
 	char	dest[100] = "01234";
 	size_t	result;
+	size_t	size;
 
 	//represente la taille total du tampon que dest devrait avoir normalement
-	size_t  size = 11; 
+	size = 11;
 	result = ft_strlcat(dest, src, size);
 	printf("Source : %s\n", src);
 	printf("Destination: %s\n", dest);
 	printf("Taille de la source: %zu\n", result);
 }
-// si la valeur retourner par la fonction a la fin est = ou > 
+// si la valeur retourner par la fonction a la fin est = ou >
 // a size c'est que la chaine src a ete tronquee
  */

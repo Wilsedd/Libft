@@ -1,38 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wisedeau <wisedeau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/03 17:38:44 by wisedeau          #+#    #+#             */
-/*   Updated: 2025/05/03 17:38:45 by wisedeau         ###   ########.fr       */
+/*   Created: 2025/05/03 17:17:48 by wisedeau          #+#    #+#             */
+/*   Updated: 2025/05/03 17:52:57 by wisedeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+void	*ft_calloc(size_t nb_element, size_t size)
 {
-	int	i;
+	void	*array;
 
-	i = ft_strlen(str);
-	while (i >= 0)
-	{
-		if (str[i] == (char)c)
-			return ((char *)(str + i));
-		i--;
-	}
-	return (NULL);
+	array = (void *)malloc(nb_element * size);
+	if (array == NULL)
+		return (NULL);
+	ft_bzero(array, nb_element * size);
+	return (array);
 }
 
 /* int	main(void)
 {
-	char	str[] = "abc";
-	char *s = ft_strrchr(str, 'b');
-	if (s)
-		printf("%s\n", s);
-	else
-		printf("Not Found\n");
+	int *arr = (int *)calloc(5, sizeof(int));
+	if (arr)
+	{
+		for (int i = 0; i < 5; i++)
+			printf("%d ", arr[i]);
+		free(arr);
+	}
 	return (0);
 } */
+ 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wilsed <wilsed@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wisedeau <wisedeau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 19:53:43 by wisedeau          #+#    #+#             */
-/*   Updated: 2025/05/03 03:06:57 by wilsed           ###   ########.fr       */
+/*   Updated: 2025/05/03 17:35:57 by wisedeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *b, const char *little, size_t len);
 int		ft_atoi(const char *nstr);
+void	*ft_calloc(size_t nb_element, size_t size);
 
 #endif
 
