@@ -6,7 +6,7 @@
 /*   By: wilsed <wilsed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 19:53:43 by wisedeau          #+#    #+#             */
-/*   Updated: 2025/05/02 04:02:53 by wilsed           ###   ########.fr       */
+/*   Updated: 2025/05/03 03:06:57 by wilsed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,9 @@ char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+char	*ft_strnstr(const char *b, const char *little, size_t len);
+int		ft_atoi(const char *nstr);
 
 #endif
 

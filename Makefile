@@ -6,7 +6,7 @@
 #    By: wilsed <wilsed@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/22 19:53:53 by wisedeau          #+#    #+#              #
-#    Updated: 2025/05/02 03:44:19 by wilsed           ###   ########.fr        #
+#    Updated: 2025/05/03 03:07:12 by wilsed           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,8 +30,12 @@
 # 		ft_tolower.c \
 # 		ft_strchr.c \
 # 		ft_strrchr.c \
-#		ft_strncmp.c \
-		
+# 		ft_strncmp.c \
+# 		ft_memchr.c \
+# 		ft_memcmp.c \
+# 		ft_strnstr.c \
+#		ft_atoi.c \
+
 # OBJS            = $(SRCS:.c=.o)
 
 # MANPATH = $(addprefix , $(SRCS))
@@ -78,6 +82,10 @@ SRCS =	ft_isalpha.c \
 		ft_strchr.c \
 		ft_strrchr.c \
 		ft_strncmp.c \
+		ft_memchr.c \
+		ft_memcmp.c \
+		ft_strnstr.c \
+		ft_atoi.c \
 
 OBJS = $(SRCS:.c=.o)
 
