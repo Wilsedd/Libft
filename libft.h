@@ -6,7 +6,7 @@
 /*   By: wisedeau <wisedeau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 19:53:43 by wisedeau          #+#    #+#             */
-/*   Updated: 2025/05/03 17:35:57 by wisedeau         ###   ########.fr       */
+/*   Updated: 2025/05/05 11:47:25 by wisedeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+# include <stdint.h>
+# include <limits.h>
 
 int		ft_isdigit(int c);
 int		ft_isalpha(int c);
