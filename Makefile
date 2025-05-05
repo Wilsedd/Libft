@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: wisedeau <wisedeau@student.42.fr>          +#+  +:+       +#+         #
+#    By: wilsed <wilsed@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/22 19:53:53 by wisedeau          #+#    #+#              #
-#    Updated: 2025/05/03 17:18:43 by wisedeau         ###   ########.fr        #
+#    Updated: 2025/05/05 01:15:44 by wilsed           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,8 +34,10 @@
 # 		ft_memchr.c \
 # 		ft_memcmp.c \
 # 		ft_strnstr.c \
-#		ft_atoi.c \
-#		ft_calloc.c \
+# 		ft_atoi.c \
+# 		ft_calloc.c \
+# 		ft_strdup.c \
+#		ft_substr.c \
 
 # OBJS            = $(SRCS:.c=.o)
 
@@ -88,6 +90,8 @@ SRCS =	ft_isalpha.c \
 		ft_strnstr.c \
 		ft_atoi.c \
 		ft_calloc.c \
+		ft_strdup.c \
+		ft_substr.c \
 
 OBJS = $(SRCS:.c=.o)
 
