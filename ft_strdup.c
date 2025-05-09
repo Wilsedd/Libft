@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wisedeau <wisedeau@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wilsed <wilsed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 14:14:18 by wisedeau          #+#    #+#             */
-/*   Updated: 2025/05/05 14:31:51 by wisedeau         ###   ########.fr       */
+/*   Updated: 2025/05/09 01:44:47 by wilsed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ char	*ft_strdup(const char *s)
 {
 	//char *test;
 	//test = ft_strdup("hm");
-	printf("%s", ft_strdup(""));
+	printf("%s", ft_strdup(NULL));
 	return(0);
-}*/
+} */

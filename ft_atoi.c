@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wisedeau <wisedeau@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wilsed <wilsed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 17:39:50 by wisedeau          #+#    #+#             */
-/*   Updated: 2025/05/03 17:39:51 by wisedeau         ###   ########.fr       */
+/*   Updated: 2025/05/07 18:28:21 by wilsed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,6 @@ int	ft_atoi(const char *str)
 
 /* int main(void)
 {
-	printf("%d", ft_atoi("   \n-45414raah454"));
+	printf("%d", ft_atoi(NULL));
 	return (0);
 } */
